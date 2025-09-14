@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DT Journey Board - Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>DeepThought - Journey Board</h1>
+    <p class="subtitle">Collapsed & Expanded view (Dynamic from JS variable)</p>
+  </header>
+
+  <main class="board">
+    <section class="column" id="collapsed">
+      <h2>Collapsed Journey board</h2>
+      <div class="cards" id="collapsed-cards"></div>
+    </section>
+
+    <section class="column" id="expanded">
+      <h2>Expanded Journey board</h2>
+      <div class="cards" id="expanded-cards"></div>
+    </section>
+  </main>
+
+  <!-- Template for cards -->
+  <template id="card-template">
+    <article class="card">
+      <h3 class="card-title"></h3>
+      <p class="card-desc"></p>
+      <div class="meta">
+        <span class="tag"></span>
+        <span class="avatars"></span>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
